@@ -7,5 +7,17 @@
 System.Console.WriteLine("введите целое число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if(num )
+if (num < 100)
+{
+    System.Console.WriteLine("третьей цифры нет");
+}
+else
+{
+    while (num > 1000)
+    {
+        num /=  10;
+    }
+    System.Console.WriteLine(num % 10);
+}
+
 
