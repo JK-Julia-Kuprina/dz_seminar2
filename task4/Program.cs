@@ -5,17 +5,14 @@
 // 567,123 -> 57,123
 
 System.Console.WriteLine("введите целое или вещественное число число");
-double num = Convert.ToDouble(Console.ReadLine());
-
-if (num < 10)
-{
-    System.Console.WriteLine("второй цифры нет");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите позицию");
+int s = Convert.ToInt32(Console.ReadLine());
+int m = 1;
+while (s > 1) {
+     m *= 10;
+     s--;
 }
-else
-{
-    while (num > 100)
-    {
-        num /= 10;
-    }
-    System.Console.WriteLine(num / 10 % 10);
-}
+double t = (num % m) + (num / (m * 10)) * m;
+Console.WriteLine(t);
+// удаляет позицию из конкретного целого числа от макс разряда к первому
