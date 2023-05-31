@@ -9,11 +9,19 @@
 System.Console.WriteLine("введите пятизначное число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num / 1000 == num % 100)
+int a = num / 10000; int b = num / 1000 % 10; int d = num / 10 % 10; int e = num % 10;
+
+
+if (a == e & b == d)
 {
     System.Console.WriteLine("yes");
-}
+} 
 else
 {
     System.Console.WriteLine("no");
 }
+
+
+
+
+        
