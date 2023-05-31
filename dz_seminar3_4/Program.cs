@@ -35,7 +35,7 @@ class Program
 {    static void Main(string[] args)
     {
         Console.Write("Введите размерность пространства N: ");
-        int n = int.Parse(Console.ReadLine());
+        int n = int.Parse(Console.ReadLine()!);
 
         double[] point1 = new double[n];
         double[] point2 = new double[n];
@@ -44,14 +44,14 @@ class Program
         for (int i = 0; i < n; i++)
         {
             Console.Write($"Координата {i + 1}: ");
-            point1[i] = double.Parse(Console.ReadLine());
+            point1[i] = double.Parse(Console.ReadLine()!);
         }
 
         Console.WriteLine("Введите координаты второй точки:");
         for (int i = 0; i < n; i++)
         {
             Console.Write($"Координата {i + 1}: ");
-            point2[i] = double.Parse(Console.ReadLine());
+            point2[i] = double.Parse(Console.ReadLine()!);
         }
 
         double distance = CalculateDistance(point1, point2);

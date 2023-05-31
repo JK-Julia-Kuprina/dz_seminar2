@@ -4,7 +4,7 @@
 // 89126 -> 5
 
 System.Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 
 
 int digital(int num)
