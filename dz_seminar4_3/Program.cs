@@ -8,7 +8,7 @@ int Prompt(string message)
 {
     System.Console.Write(message);
     string ReadInput = System.Console.ReadLine();
-    int result = int.Parse(ReadInput);
+    int result = Convert.ToInt32(ReadInput);
     return result; 
 }
 int[] FillArray(int Length, int minGigit, int maxDigit)
